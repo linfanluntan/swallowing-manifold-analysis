@@ -1,0 +1,54 @@
+# Configuration for real data experiments
+# ========================================
+
+data:
+  raw_dir: data/real/raw
+  processed_dir: data/real/processed
+  landmark_format: csv  # csv or nifti
+  n_landmarks: 14
+  fps: 25.0  # Acquisition frame rate
+
+preprocessing:
+  smoothing:
+    method: savgol
+    window_length: 7
+    polyorder: 3
+  normalization:
+    method: centroid  # centroid, procrustes
+    scale: true
+  outlier_removal:
+    method: iqr
+    threshold: 3.0
+  interpolation:
+    n_points: 200
+
+landmark_groups:
+  tongue: [0, 1, 2, 3, 4, 5, 6, 7]
+  larynx: [8, 9, 10, 11, 12, 13, 14, 15]
+  pharynx: [16, 17, 18, 19, 20, 21, 22, 23]
+  ues: [24, 25, 26, 27]
+
+manifold_learning:
+  method: isomap
+  n_neighbors: 8
+  max_dim_test: 15
+
+metrics:
+  compute_srvf: true
+  compute_synchrony: true
+  compute_phases: true
+
+clinical_comparison:
+  scores_file: data/real/clinical_scores.csv  # Optional
+  metrics_to_correlate:
+    - geodesic_length
+    - mean_curvature
+    - peak_velocity
+    - synchrony_risk
+    - bottleneck_score
+
+output:
+  figures_dir: results/figures
+  tables_dir: results/tables
+  save_format: png
+  dpi: 300

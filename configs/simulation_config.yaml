@@ -1,0 +1,46 @@
+# Configuration for simulated experiments
+# ========================================
+
+manifold:
+  intrinsic_dim: 5
+  ambient_dim: 28  # 14 landmarks x 2D
+  seed: 42
+
+trajectory:
+  n_frames: 100
+  fps: 25.0
+  noise_std: 0.02
+
+cohort:
+  n_per_condition: 50
+  conditions:
+    - healthy
+    - fibrotic
+    - weak
+    - compensatory
+    - neurogenic
+
+manifold_learning:
+  method: isomap  # isomap, diffusion_map, pca
+  n_neighbors: 10
+  max_dim_test: 20
+
+srvf:
+  n_resample: 200
+  n_dp_grid: 100
+  n_warpings: 20
+  warp_strength: 0.3
+
+phase_detection:
+  n_phases: 5
+  curvature_threshold: 0.5
+
+classification:
+  method: random_forest  # random_forest, gradient_boosting, svm
+  n_cv_folds: 5
+
+output:
+  figures_dir: results/figures
+  tables_dir: results/tables
+  save_format: png  # png, pdf, svg
+  dpi: 300
