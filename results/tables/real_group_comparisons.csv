@@ -1,0 +1,7 @@
+metric,healthy_mean,patient_mean,U,p,effect_size
+geodesic_length,142.703,312.771,0.0,0.0,1.0
+mean_curvature,0.698,0.841,35.0,0.0001,0.767
+peak_velocity,97.514,288.517,0.0,0.0,1.0
+smoothness_index,-8.946,-9.35,300.0,0.0,-1.0
+bottleneck_score,0.711,0.5,297.0,0.0,-0.98
+synchrony_risk,3.394,0.809,270.0,0.0001,-0.8

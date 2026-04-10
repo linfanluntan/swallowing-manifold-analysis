@@ -1,0 +1,8 @@
+,geodesic_length,geodesic_length,mean_curvature,mean_curvature,total_curvature,total_curvature,peak_velocity,peak_velocity,smoothness_index,smoothness_index,bottleneck_score,bottleneck_score,energy_sharing,energy_sharing,synchrony_risk,synchrony_risk
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+condition,,,,,,,,,,,,,,,,
+compensatory,9.539,0.046,4.004,0.077,15.942,0.309,4.16,0.394,-7.249,0.019,0.686,0.07,0.741,0.001,2.034,1.859
+fibrotic,5.108,0.673,12.114,2.478,48.31,9.895,3.024,0.354,-7.876,0.125,0.446,0.044,0.732,0.002,2.47,1.957
+healthy,8.352,0.045,5.159,0.116,20.556,0.463,3.975,0.313,-7.381,0.022,0.614,0.057,0.735,0.001,2.064,1.88
+neurogenic,13.008,2.133,4.651,0.582,18.489,2.323,5.807,1.204,-7.418,0.039,0.531,0.062,0.731,0.002,2.587,1.198
+weak,8.445,0.103,5.761,0.911,22.936,3.648,5.31,0.969,-7.371,0.025,0.435,0.1,0.735,0.001,0.484,0.737
